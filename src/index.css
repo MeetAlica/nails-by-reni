@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  background-image: url("src/assets/background-image.jpg");
+  font-family: "Playwrite RO", cursive;
+}
+
+.text-shadow {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
