@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .app {
-  background-image: url("src/assets/background-image.jpg");
+  background-image: url("public/background-image.jpg");
   font-family: "Playwrite RO", cursive;
 }
 
