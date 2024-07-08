@@ -1,4 +1,4 @@
-import ImageSlider from "./ImageSlider";
+import ImageSlider from "../util/ImageSlider";
 
 import Image1 from "../assets/images/zseles/1.jfif";
 import Image2 from "../assets/images/zseles/2.jfif";

@@ -1,3 +1,5 @@
+import FadeInSection from "./util/FadeInSection";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Work from "./components/Work";
@@ -8,9 +10,19 @@ const App = () => {
   return (
     <div className="app bg-auto bg-repeat">
       <Navbar />
-      <Hero />
-      <Work />
-      <Contact />
+
+      <FadeInSection>
+        <Hero />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Work />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Contact />
+      </FadeInSection>
+
       <Footer />
     </div>
   );
