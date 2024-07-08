@@ -1,4 +1,5 @@
 import FadeInSection from "./util/FadeInSection";
+import BackToTop from "./util/BackToTop";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -24,6 +25,8 @@ const App = () => {
       </FadeInSection>
 
       <Footer />
+
+      <BackToTop />
     </div>
   );
 };
