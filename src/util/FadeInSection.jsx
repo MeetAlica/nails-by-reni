@@ -8,7 +8,12 @@ const FadeInSection = ({ children }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => setIsVisible(entry.isIntersecting));
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      });
     });
 
     observer.observe(domRef.current);
@@ -19,9 +24,9 @@ const FadeInSection = ({ children }) => {
   return (
     <motion.div
       ref={domRef}
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 100 }}
-      transition={{ duration: 1 }}
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -100 }}
+      transition={{ duration: 1.5 }}
     >
       {children}
     </motion.div>
