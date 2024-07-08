@@ -15,7 +15,7 @@ const Hero = () => {
           Üdvözöllek az oldalamon!
         </h1>
 
-        <p className="text-white sm:text-xl my-6 lg:text-2xl text-shadow bg-gray-400 bg-opacity-50 p-5 rounded-3xl">
+        <p className="text-white sm:text-xl my-6 lg:text-2xl text-shadow bg-red-300 bg-opacity-50 p-5 rounded-3xl">
           Reni vagyok, és immár 5 éve foglalkozom műkörömépítéssel és erősített
           géllakk technikával. Ez idő alatt rengeteg tapasztalatot szereztem, és
           szenvedélyemmé vált a körmök világa.
@@ -25,17 +25,17 @@ const Hero = () => {
           Miért válassz engem?
         </h2>
         <ul className="list-disc list-inside">
-          <li className="text-white sm:text-xl my-6 lg:text-2xl text-shadow bg-gray-400 bg-opacity-50 p-5 rounded-3xl">
+          <li className="text-white sm:text-xl my-6 lg:text-2xl text-shadow bg-green-300 bg-opacity-50 p-5 rounded-3xl">
             <span className="underline">Minőségi alapanyagok:</span> Kizárólag a
             legjobb minőségű termékekkel dolgozom, hogy a végeredmény tartós és
             gyönyörű legyen.
           </li>
-          <li className="text-white sm:text-xl my-6 lg:text-2xl text-shadow bg-gray-700 bg-opacity-50 p-5 rounded-3xl">
+          <li className="text-white sm:text-xl my-6 lg:text-2xl text-shadow bg-red-300 bg-opacity-50 p-5 rounded-3xl">
             <span className="underline">Személyre szabott szolgáltatások:</span>{" "}
             Minden vendégem számára egyedi, személyre szabott megoldásokat
             kínálok, figyelembe véve az egyéni igényeket és stílust.
           </li>
-          <li className="text-white sm:text-xl my-6 lg:text-2xl text-shadow bg-gray-400 bg-opacity-50 p-5 rounded-3xl">
+          <li className="text-white sm:text-xl my-6 lg:text-2xl text-shadow bg-green-300 bg-opacity-50 p-5 rounded-3xl">
             <span className="underline">Kreativitás és egyediség:</span> Munkáim
             során nagy hangsúlyt fektetek az egyedi, kreatív megoldásokra,
             legyen szó egyszerűbb vagy extrémebb díszítésekről.
