@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .app {
   background-image: url("/background-image.jpg");
   font-family: "Playwrite RO", cursive;
