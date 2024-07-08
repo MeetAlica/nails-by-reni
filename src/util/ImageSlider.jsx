@@ -1,13 +1,15 @@
 import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow } from "swiper/modules";
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const ImageSlider = ({ name, images }) => {
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mx-auto relative">
       <h1 className="text-2xl md:text-3xl lg:text-4xl text-center py-3 text-shadow">
         {name}
       </h1>
@@ -23,7 +25,9 @@ const ImageSlider = ({ name, images }) => {
           depth: 100,
           modifier: 2.5,
         }}
-        modules={[EffectCoverflow]}
+        navigation={true}
+        pagination={{ clickable: true }}
+        modules={[EffectCoverflow, Navigation, Pagination]}
         className="py-8 relative h-fit"
       >
         {images.map((image) => {
